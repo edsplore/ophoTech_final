@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opho Tech - Connect, Create, Evolve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Voiceflow Chatbot -->
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '6880bd6d8519297744f61f1a' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
