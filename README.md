@@ -67,3 +67,7 @@ export default tseslint.config([
   },
 ])
 ```
+
+## Deployment
+
+When deploying this Single Page Application, ensure the server redirects all routes to `index.html` so the client-side router can handle navigation. The `public/_redirects` file in this project adds this behavior for static hosts like Netlify.
